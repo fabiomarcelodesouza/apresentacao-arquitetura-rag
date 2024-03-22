@@ -29,4 +29,4 @@ Contém o código que implementa a arquitetura RAG. Este arquivo inclui funçõe
 Este exemplo é uma implementação simplificada da arquitetura RAG e é fornecido apenas para fins educacionais e de demonstração. A integração com sistemas reais pode exigir ajustes e considerações adicionais.
 
 ---
-Este projeto foi desenvolvido como parte de uma apresentação sobre a arquitetura RAG para a empresa Mobilize Financial Services. Para mais informações, entre em contato com [seu nome ou equipe].
+Este projeto foi desenvolvido como parte de uma apresentação sobre a arquitetura RAG para a empresa Mobilize Financial Services. Para mais informações, entre em contato com fabmasouza@hotmail.com.
