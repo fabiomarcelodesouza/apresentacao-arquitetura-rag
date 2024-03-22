@@ -31,7 +31,7 @@ def populate_vector_db(DB_PATH="./db/"):
     print(documents)
     text_splitter = CharacterTextSplitter(chunk_size=256, chunk_overlap=0)
     docs = text_splitter.split_documents(documents)
-    embeddings = OpenAIEmbeddings(OPENAI_API_KEY=OPENAI_API_KEY)
+    embeddings = OpenAIEmbeddings()
     db = FAISS.from_documents(docs, embeddings)
 
     return db
@@ -62,7 +62,6 @@ def format_prompt(retrieved_docs, question):
 def get_chatgpt_response(prompt, empresa):
     client = openai.OpenAI(api_key=OPENAI_API_KEY)    
 
-
     response = client.chat.completions.create(
         model="gpt-4-0125-preview",  # ou outro modelo ChatGPT que você preferir        
         messages=[
@@ -83,7 +82,7 @@ def ask_rag(question, empresa):
 
     # Formate o prompt com os documentos recuperados e a pergunta
     prompt = format_prompt(retrieved_docs, question)
-    #prompt = question
+    # prompt = question
 
     # Obtenha a resposta do ChatGPT
     answer = get_chatgpt_response(prompt, empresa)

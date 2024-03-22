@@ -1,0 +1,60 @@
+<mxfile host="65bd71144e">
+    <diagram id="vGZ4soz-1uyxByxRb7Nm" name="Page-1">
+        <mxGraphModel dx="1711" dy="688" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="59" value="RAG" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FFFFFF;dashed=1;verticalAlign=top;fontSize=17;fillColor=#1A2853;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="610" y="180" width="572" height="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="Data Sources" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FFFFFF;dashed=1;verticalAlign=top;fontSize=17;fillColor=#2167AE;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1190" y="180" width="320" height="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="SharePoint" style="shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#EF8F21;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.veeam.ms_sharepoint;fontColor=#FFFFFF;fontSize=13;labelBackgroundColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1280.72" y="263.1" width="33.8" height="33.8" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="OneDrive" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.onedrive;fillColor=#094AB1;strokeColor=none;fontColor=#FFFFFF;fontSize=13;labelBackgroundColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1272.9" y="358" width="49.44" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="SQL Server Database" style="sketch=0;outlineConnect=0;fontColor=#FFFFFF;gradientColor=none;fillColor=#2E27AD;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=13;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.rds_sql_server_instance;labelBackgroundColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1277.6200000000001" y="448" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="Oracle Database" style="sketch=0;outlineConnect=0;fontColor=#FFFFFF;gradientColor=none;fillColor=#2E27AD;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=13;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.rds_oracle_instance;labelBackgroundColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1400" y="259.45" width="42.42" height="42.42" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="Any File" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/folder.svg;fontColor=#FFFFFF;fontSize=13;labelBackgroundColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1402.96" y="353.66" width="36.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;fontSize=13;labelBackgroundColor=none;strokeColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="1214" y="230" width="20" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="Semantic Search" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=13;image=img/lib/azure2/app_services/Search_Services.svg;fontColor=#FFFFFF;labelBackgroundColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="850" y="259.45" width="55.38" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="Query" style="edgeStyle=none;html=1;fontSize=13;fontColor=#FFFFFF;startArrow=none;startFill=0;verticalAlign=bottom;labelBackgroundColor=none;strokeColor=#FFFFFF;" parent="1" source="38" target="25" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="Vector&amp;nbsp;&lt;br style=&quot;font-size: 13px;&quot;&gt;Database" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=none;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.data;fontColor=#FFFFFF;fontSize=13;" parent="1" vertex="1">
+                    <mxGeometry x="1053" y="260" width="44" height="38.9" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="Prompt + &lt;br&gt;Knowledge" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FFFFFF;startArrow=classic;startFill=1;fontSize=13;labelBackgroundColor=none;strokeColor=#FFFFFF;" parent="1" source="41" target="46" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="Knowledge" style="edgeStyle=none;html=1;fontColor=#FFFFFF;startArrow=classic;startFill=1;fontSize=13;labelBackgroundColor=none;verticalAlign=bottom;strokeColor=#FFFFFF;" parent="1" source="41" target="25" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="41" value="APP Service" style="sketch=0;aspect=fixed;html=1;points=[];align=center;image;fontSize=13;image=img/lib/mscae/App_Services.svg;fontColor=#FFFFFF;labelBackgroundColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="640" y="260" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="LLM" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/png,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;fontColor=#FFFFFF;fontSize=13;" parent="1" vertex="1">
+                    <mxGeometry x="857.6700000000001" y="428" width="47.71" height="49" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" style="edgeStyle=none;html=1;exitX=0.1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.136;entryY=0.537;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#FFFFFF;fontSize=13;labelBackgroundColor=none;strokeColor=#FFFFFF;" parent="1" source="37" target="38" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
