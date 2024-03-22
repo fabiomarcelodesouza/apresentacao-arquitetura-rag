@@ -8,6 +8,7 @@ from langchain_openai import OpenAIEmbeddings
 from langchain_community.document_loaders import PyPDFLoader
 from langchain.docstore.document import Document
 
+OPENAI_API_KEY = ""
 
 def populate_vector_db(DB_PATH="./db/"):
     directory_path = '.\\BaseConhecimento'
@@ -30,7 +31,7 @@ def populate_vector_db(DB_PATH="./db/"):
     print(documents)
     text_splitter = CharacterTextSplitter(chunk_size=256, chunk_overlap=0)
     docs = text_splitter.split_documents(documents)
-    embeddings = OpenAIEmbeddings()
+    embeddings = OpenAIEmbeddings(OPENAI_API_KEY=OPENAI_API_KEY)
     db = FAISS.from_documents(docs, embeddings)
 
     return db
@@ -59,18 +60,19 @@ def format_prompt(retrieved_docs, question):
     return prompt_completo
 
 def get_chatgpt_response(prompt, empresa):
-    client = openai.OpenAI(api_key="")    
+    client = openai.OpenAI(api_key=OPENAI_API_KEY)    
 
 
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",  # ou outro modelo ChatGPT que você preferir        
+        model="gpt-4-0125-preview",  # ou outro modelo ChatGPT que você preferir        
         messages=[
             {"role": "system", "content": f"Vocé é um assistente que fornece informações sobre a empresa {empresa}."},
             {"role": "user", "content": prompt},
         ]
     )
 
-    print(f"Prompt............: {prompt}")
+    print(f"Prompt..............: {prompt}")
+    print(f"Response............: {response.choices[0].message.content}")
     return response.choices[0].message.content
 
 def ask_rag(question, empresa):
@@ -81,6 +83,7 @@ def ask_rag(question, empresa):
 
     # Formate o prompt com os documentos recuperados e a pergunta
     prompt = format_prompt(retrieved_docs, question)
+    #prompt = question
 
     # Obtenha a resposta do ChatGPT
     answer = get_chatgpt_response(prompt, empresa)
