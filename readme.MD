@@ -1,6 +1,6 @@
-# Repositório: Exemplo de Arquitetura RAG - Mobilize Financial Services
+# Repositório: Exemplo de Arquitetura RAG
 
-Este repositório contém uma implementação de exemplo da arquitetura Retrieval Augmented Generation (RAG) para a empresa Mobilize Financial Services. A aplicação utiliza o Streamlit como interface de usuário para permitir a interação com o sistema.
+Este repositório contém uma implementação de exemplo da arquitetura Retrieval Augmented Generation (RAG). A aplicação utiliza o Streamlit como interface de usuário para permitir a interação com o sistema.
 
 ## Arquivos no Repositório:
 
@@ -29,4 +29,4 @@ Contém o código que implementa a arquitetura RAG. Este arquivo inclui funçõe
 Este exemplo é uma implementação simplificada da arquitetura RAG e é fornecido apenas para fins educacionais e de demonstração. A integração com sistemas reais pode exigir ajustes e considerações adicionais.
 
 ---
-Este projeto foi desenvolvido como parte de uma apresentação sobre a arquitetura RAG para a empresa Mobilize Financial Services. Para mais informações, entre em contato com fabmasouza@hotmail.com.
+Este projeto foi desenvolvido como parte de uma apresentação sobre a arquitetura RAG. Para mais informações, entre em contato com fabmasouza@hotmail.com.
